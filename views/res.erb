@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Reservations</title>
+		<link href="bootstrap.min.css" rel="stylesheet">
+		<link href="style.css" rel="stylesheet">
+	</head>
+	<body>
+	<div class="navbar navbar-fixed-top navbar-inverse" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="hotel.erb">Pool and Sea Side Hotel</a><!-- this is where you set the navigation title -->
+        </div>
+        <div class="collapse navbar-collapse"><!-- collapse allows for this navbar to be used in mobile devices -->
+          <ul class="nav navbar-nav"><!-- this is the list of navigation options in your navbar -->
+			<li><a href="hotel.erb">Home</a></li>
+            <li><a href="about.erb">About</a></li>
+            <li><a href="rooms.erb">Rooms</a></li>
+			<li class="active"><a href="res.erb">Reserve Now</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+	<br/><br/><br/>
+		<h1>Reservations</h1>
+		<div class="col-md-6">
+			<div class="form-group">
+			<form method="POST" action="/confirm.erb">
+				<label for="fullname">Full Name</label>
+				<input type="full name" name="name" class="form-control" id="exampleFullName" placeholder="Full Name">
+			</div>
+			<div class="form-group">
+			<label for="rooms">Choose your room</label>
+			<select name="type">
+				<option value="standard">Standard</option>
+				<option value="deluxe">Deluxe</option>
+				<option value="suite">Suite</option>
+			</select>
+			</div>
+			<div class="form-group">
+			<label for="date">Pick a date</label>
+		Date: <input type="date" name="date">
+			</div>
+			<input type="submit" value="Reserve" />
+			</form>
+		</div>
+		
+	</body>
+</html>

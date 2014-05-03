@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Rooms</title>
+		<link href="bootstrap.min.css" rel="stylesheet">
+		<link href="style.css" rel="stylesheet">
+	</head>
+	<body>
+	<div class="navbar navbar-fixed-top navbar-inverse" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="hotel.erb">Pool Side Hotel</a><!-- this is where you set the navigation title -->
+        </div>
+        <div class="collapse navbar-collapse"><!-- collapse allows for this navbar to be used in mobile devices -->
+          <ul class="nav navbar-nav"><!-- this is the list of navigation options in your navbar -->
+			<li><a href="hotel.erb">Home</a></li>
+            <li><a href="about.erb">About</a></li>
+            <li class="active"><a href="rooms.erb">Rooms</a></li>
+			<li><a href="res.erb">Reserve Now</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+	<br/><br/><br/>
+		<div class="col-md-6">
+			<h1>Accommodations</h1>
+			<div class="col-md-4">Standard Room</div>
+			<img src="room1.jpg" />
+			<br/> <br/>
+			<div class="col-md-4">Deluxe Room</div>
+			<img src="room2.jpg" />
+			<br/><br/>
+			<div class="col-md-4">Suite</div>
+			<img src="room3.jpg" />
+		</div>
+	</body>
+</html>
